@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donor Sponsorship System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Section 1: Sponsor a Student -->
+    <div class="card">
+      <h2>🎓 Sponsor a Student</h2>
+      <label for="studentId">👨‍🎓 Select Student:</label>
+      <select id="studentId" onchange="showStudentDetails()">
+        <option value="">-- Select Student --</option>
+      </select>
+      <div id="studentDetails"></div>
+      <button onclick="sponsorStudent()">Sponsor Student</button>
+    </div>
+
+    <!-- Section 2: Track Fund Usage -->
+    <div class="card">
+      <h2>💰 Track Fund Usage</h2>
+      <label for="fundStudentId">👨‍🎓 Select Student:</label>
+      <select id="fundStudentId">
+        <option value="">-- Select Student --</option>
+      </select>
+      <button onclick="trackFundUsage()">Track Fund Usage</button>
+      <div id="fundResult" style="margin-top: 15px;"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
